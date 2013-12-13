@@ -33,3 +33,15 @@ def quiz_questions
     }
   }
 end
+
+def results
+  {"et" => {:name => "E.T.", :description => "You are ET!", :image =>"/images/et.jpg"},
+  "facehugger" => {:name => "Facehugger", :description => "You are a Facehugger!", :image => "/images/facehugger.jpg"},
+  "klingon" => {:name => "Klingon", :description => "You are a Klingon!", :image => "/images/klingon.jpg"},
+  "moya" => {:name => "Moya", :description => "You are Moya!", :image => "/images/moya.jpg"},
+  "navi" => {:name => "Na'vi", :description => "You are a Na'vi!", :image => "/images/navi.jpg"},
+  "superman" => {:name => "Superman", :description => "You are Superman!", :image => "/images/superman.jpg"},
+  "thedoctor" => {:name => "Superman", :description => "You are the Doctor!", :image => "/images/thedoctor.jpg"},
+  "yoda" => {:name => "Yoda", :description => "You are Yoda!", :image => "/images/yoda.jpg"}
+  }
+end
