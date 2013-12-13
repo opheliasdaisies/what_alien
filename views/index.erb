@@ -1,12 +1,12 @@
 <h1>What kind of alien are you?</h1>
 <form action="/results" method="POST">
   <% @questions.each do |question_num, hash| %>
-    <label for="<%= question_num %>">Question <%= question_num.capitalize %>:</label><br>
+    <label for="<%= question_num %>">Question <%= question_num.capitalize %>: <%= hash[:question] %></label><br>
     <% hash[:answers].each do |value, text| %>
-      <input type="radio" id="<%= question_num %>" name="<%= hash[:question] %>" value="<%= value %>"><%=text%></input>
+      <input type="radio" id="<%= question_num %>" name="<%= question_num %>" value="<%= value %>"><%=text%></input>
       <br>
     <% end %>
     <br><br>
   <% end %>
-  <button type="submit" name="submit">Find out what kind of alien you are!</button>
+  <button type="submit" value="submit">Find out what kind of alien you are!</button>
 </form>
